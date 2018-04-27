@@ -49,7 +49,7 @@ shinyServer(
       fit1 = Arima(ts1, order = c(4,1,1),include.drift = T)
       future<-forecast(fit1,h=6)
       plot(future,xlab = "Month",ylab = "value",main = "Forecast For Request")
-      summary(future)
+      
     })
     
     output$text1<-renderPrint({
@@ -65,7 +65,7 @@ shinyServer(
       fit1 = Arima(ts1, order = c(4,1,1),include.drift = T)
       future<-forecast(fit1,h=6)
       plot(future,xlab = "Month",ylab = "value",main = "Forecast For Opd")
-      summary(future)
+      
     })
     
     output$text2<-renderPrint({
@@ -81,7 +81,7 @@ shinyServer(
       fit1 = Arima(ts1, order = c(4,1,1),include.drift = T)
       future<-forecast(fit1,h=6)
       plot(future,xlab = "Month",ylab = "value",main = "Forecast For Ipd")
-      summary(future)
+      
     })
     
     output$text3<-renderPrint({
