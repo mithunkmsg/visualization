@@ -108,9 +108,9 @@ shinyServer(
       spe_xts <- xts(cbind(selected2()$n,selected3()$n,selected4()$n), order.by = as.Date(selected2()$Month))
       dygraph(spe_xts,xlab = "Month",ylab = "Value")%>%
         #dySeries("V1",label="Ind_search",color="red", fillGraph = F, strokeWidth = 3, drawPoints = T,pointSize=3)%>%
-        dySeries("V1",label="Request",color="green",fillGraph = F, strokeWidth = 3, drawPoints = T,pointSize=3)%>%
-        dySeries("V2",label="Opd",color="purple",fillGraph = F, strokeWidth = 3, drawPoints = T,pointSize=3)%>%
-        dySeries("V3",label="Ipd",color="orange",fillGraph = F, strokeWidth = 3, drawPoints = T,pointSize=3)#%>%
+        dySeries("V1",label="Credi_Request",color="green",fillGraph = F, strokeWidth = 3, drawPoints = T,pointSize=3)%>%
+        dySeries("V2",label="Credi_Opd",color="purple",fillGraph = F, strokeWidth = 3, drawPoints = T,pointSize=3)%>%
+        dySeries("V3",label="Credi_Ipd",color="orange",fillGraph = F, strokeWidth = 3, drawPoints = T,pointSize=3)#%>%
       #dyLegend(labelsDiv = "legendDivID",labelsSeparateLines = T)
       
       
